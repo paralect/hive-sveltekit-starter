@@ -1,6 +1,6 @@
 # Hive SvelteKit starter
 
-Svelte + SvelteKIT + PostCSS + ShadCN
+Svelte + SvelteKIT + Tailwind/PostCSS + ShadCN
 
 Attached to Hive auth API
 
