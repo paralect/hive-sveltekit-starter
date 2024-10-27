@@ -1,8 +1,8 @@
 <script>
 	import { post } from '$lib/services/api';
 
-	let email = '';
-	let password = '';
+	let email = $state('');
+	let password = $state('');
 
 	let login = async () => {
 		const { accessToken, user } = await post('auth/login', {
@@ -16,5 +16,5 @@
 	<input placeholder="email@email.com" class="w-full" type="email" bind:value={email} />
 	<input placeholder="password" class="w-full" type="password" bind:value={password} />
 
-	<button on:click={login}>Log In</button>
+	<button onclick={login}>Log In</button>
 </div>
